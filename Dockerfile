@@ -12,8 +12,6 @@ RUN uv sync --no-install-project --no-editable
 # Copy source code
 COPY . .
 
-RUN touch README.md
-
 RUN uv sync --no-editable
 
 # final stage - runtime environment
